@@ -1,0 +1,332 @@
+  :root {
+  --bg:#070b1a;
+  --glass:rgba(255,255,255,.08);
+  --text:#e8f0ff;
+  --muted:#9fb0d1;
+  --grad:linear-gradient(135deg,#7c5cff 0%, #2dd4bf 60%, #ff5ea4 100%);
+}
+
+/* Reset */
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',system-ui;}
+body{background:var(--bg);color:var(--text);overflow-x:hidden;}
+
+/* ===== Header/Appbar ===== */
+header.appbar {
+  position:fixed; top:0; left:0; right:0; z-index:1000;
+  display:flex; align-items:center; justify-content:space-between;
+  padding:14px 18px;
+  background:rgba(8,14,32,.8); backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--glass);
+}
+.left,.right{display:flex;align-items:center;gap:10px;}
+.brand{font-size:20px;font-weight:800;background:var(--grad);-webkit-background-clip:text;color:transparent;}
+.subtitle{font-size:12px;color:var(--muted);}
+.icon-btn{width:38px;height:38px;border-radius:12px;border:0;cursor:pointer;background:var(--glass);color:#fff;font-size:18px;display:grid;place-items:center;}
+.icon-btn:hover{background:rgba(255,255,255,.2);}
+
+/* ===== Main Section ===== */
+main{padding:110px 16px 92px;}
+section.view{display:none;}
+section.view.active{display:block;}
+
+/* ===== Grid ===== */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px;}
+.card{
+  border-radius:16px;overflow:hidden;
+  background:rgba(255,255,255,.05);border:1px solid var(--glass);
+  cursor:pointer;text-decoration:none;color:inherit;
+  transition:.3s;opacity:0;transform:translateY(12px);
+  animation:fadeUp .5s ease forwards;
+}
+.card:hover{transform:translateY(-4px);background:rgba(255,255,255,.1);}
+.thumb{height:160px;background:#12214a;display:flex;align-items:center;justify-content:center;font-size:32px;font-weight:700;color:#fff;}
+.card-body{padding:12px;}
+.title{font-weight:700;font-size:16px;}
+.hint{font-size:13px;color:var(--muted);}
+@keyframes fadeUp{from{opacity:0;transform:translateY(14px);}to{opacity:1;transform:translateY(0);}}
+
+/* ===== Side Menu ===== */
+#menuOverlay{position:fixed;inset:0;background:rgba(0,0,0,.45);opacity:0;visibility:hidden;transition:.25s;z-index:900;}
+#menuOverlay.show{opacity:1;visibility:visible;}
+#sideMenu{
+  position:fixed;top:0;left:-250px;height:100%;width:240px;z-index:1001;
+  background:#0d1733;border-right:1px solid var(--glass);
+  padding:80px 12px;display:flex;flex-direction:column;gap:10px;transition:.3s;
+}
+#sideMenu.open{left:0;}
+#sideMenu a{padding:10px 12px;border-radius:10px;color:var(--text);text-decoration:none;background:rgba(255,255,255,.05);}
+#sideMenu a:hover{background:rgba(255,255,255,.15);}
+
+/* ===== Subject Cards Stylish ===== */
+.subject-card {
+  position: relative;
+  border-radius: 14px;
+  overflow: hidden;
+  padding: 0;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.subject-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.6);
+}
+
+.subject-card:active {
+  transform: scale(0.96);
+  box-shadow: 0 0 20px rgba(255,255,255,0.6);
+}
+
+/* Card Body Layout */
+.subject-card .card-body {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px;
+}
+
+/* Title Text */
+.subject-card .title {
+  font-size: 18px;
+  font-weight: 700;
+  background: linear-gradient(135deg,#00c6ff,#0072ff);
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 0.5px;
+  text-shadow: 0 0 8px rgba(0, 114, 255, 0.4);
+  transition: text-shadow 0.3s;
+}
+
+.subject-card:hover .title {
+  text-shadow: 0 0 12px rgba(0, 195, 255, 0.7);
+}
+
+/* Hint text */
+.subject-card .hint {
+  font-size: 13px;
+  color: #a8b6d1;
+  font-style: italic;
+  letter-spacing: 0.3px;
+}
+
+/* Mail button simple stylish */
+.mail-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: linear-gradient(135deg,#0072ff,#00c6ff);
+  color: white;
+  font-size: 18px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.mail-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 12px rgba(0, 195, 255, 0.7);
+}
+/* ===== Chapter Cards Stylish ===== */
+.chapter-card {
+  position: relative;
+  border-radius: 14px;
+  overflow: hidden;
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.15);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+.chapter-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.6);
+}
+.chapter-card .card-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px;
+}
+.chapter-card .title {
+  font-size: 16px;
+  font-weight: 700;
+  background: linear-gradient(135deg,#ff9a9e,#fad0c4);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: 0 0 6px rgba(255,255,255,0.4);
+}
+.chapter-card .hint {
+  font-size: 13px;
+  color: #cbd5e1;
+  font-style: italic;
+}
+.chapter-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: linear-gradient(135deg,#ff6a00,#ee0979);
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.chapter-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 12px rgba(255, 100, 150, 0.8);
+}
+
+/* ===== Subject / Unit Card ===== */
+.card.subject-card {
+  --accent:#7c5cff;  /* Default accent */
+  position:relative;
+  padding:18px;
+  border-radius:14px;
+  background:rgba(255,255,255,.05);
+  border:1px solid rgba(255,255,255,.1);
+  color:#fff;
+  font-size:16px;
+  font-weight:500;
+  transition:transform .25s, box-shadow .25s;
+  box-shadow:0 4px 12px rgba(0,0,0,0.25);
+  opacity:0; transform:translateY(12px);
+  animation:fadeUp .4s ease forwards;
+}
+.card.subject-card small {
+  font-size:14px; color:#9ca3af; display:block; margin-top:4px;
+}
+.card.subject-card::before {
+  content:"";
+  position:absolute; inset:0 auto 0 0;
+  width:6px;
+  background:linear-gradient(180deg,var(--accent),transparent 80%);
+  border-radius:14px 0 0 14px;
+}
+.card.subject-card:hover {
+  transform:translateY(-4px);
+  box-shadow:0 10px 24px rgba(0,0,0,0.4);
+  background:rgba(124,92,255,0.15);
+}
+/* Animation */
+@keyframes fadeUp {
+  from{opacity:0; transform:translateY(14px);}
+  to{opacity:1; transform:translateY(0);}
+}
+.subjects-grid .card.subject-card:nth-child(1){animation-delay:0.05s;}
+.subjects-grid .card.subject-card:nth-child(2){animation-delay:0.12s;}
+.subjects-grid .card.subject-card:nth-child(3){animation-delay:0.18s;}
+.subjects-grid .card.subject-card:nth-child(4){animation-delay:0.25s;}
+.subjects-grid .card.subject-card:nth-child(5){animation-delay:0.32s;}
+
+/* 🎨 Accent Colors */
+.accent-phy  { --accent:#38bdf8; }  /* Physics */
+.accent-chem { --accent:#f87171; }  /* Chemistry */
+.accent-math { --accent:#34d399; }  /* Mathematics */
+.accent-bio  { --accent:#facc15; }  /* Biology */
+
+/* ===== Tabs (Science/Arts/Commerce) ===== */
+.tabs {
+  display:flex;
+  justify-content:center;
+  margin:15px 0;
+  gap:10px;
+}
+.tab {
+  background:#1e1e2f;
+  color:#ccc;
+  padding:8px 16px;
+  border-radius:20px;
+  border:none;
+  cursor:pointer;
+  font-weight:bold;
+  transition:all 0.3s ease;
+}
+.tab.active {
+  background:linear-gradient(135deg,#6a5acd,#00bfff);
+  color:white;
+}
+/* ==== Tabs ==== */
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0;
+  gap: 10px;
+}
+.tab {
+  background: #1e1e2f;
+  color: #ccc;
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+.tab.active {
+  background: linear-gradient(135deg, #6a5acd, #00bfff);
+  color: white;
+}
+.chat-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg,#6a5acd,#00bfff);
+  color: white;
+  border-radius: 12px;
+  font-size: 20px;
+  transition: 0.3s;
+}
+.chat-btn:hover {
+  opacity: 0.8;
+  transform: translateY(-2px);
+}
+
+/* Details Card */
+.detail-card {
+  padding: 16px;
+  border-radius: 14px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  margin-bottom: 12px;
+}
+.save-btn {
+  margin-top: 8px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg,#7c5cff,#2dd4bf,#ff5ea4);
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+.save-btn.saved { background: #444; }
+/* শুধু Electrostatics detail page এর জন্য */
+#Electrostatics .grid {
+  display: grid;
+  grid-template-columns: 1fr; /* এক লাইনে একটাই কার্ড */
+  gap: 18px;
+}
+
+/* Save button */
+#BengaliCp1 .save-btn {
+  margin-top: 10px;
+  padding: 6px 14px;
+  border-radius: 14px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(135deg,#7c5cff,#2dd4bf,#ff5ea4);
+  color: #fff;
+  font-weight: 600;
+  transition: all .3s;
+}
+#BengaliCp1 .save-btn:hover {
+  opacity: 0.85;
+}
