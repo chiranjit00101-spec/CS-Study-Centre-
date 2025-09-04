@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="appbar">
+  <div class="left">
+    <button class="icon-btn" id="menuBtn">☰</button>
+    <div>
+      <div class="brand" id="brandTitle">CG Study Center</div>
+      <div class="subtitle" id="brandSub">All-in-one single file</div>
+    </div>
+  </div>
+  <div class="right">
+    <button class="icon-btn" onclick="location.hash='#notifications'">🔔</button>
+    <button class="icon-btn" onclick="location.hash='#settings'">⚙️</button>
+      <a href="mailto:chiranjit9732140742@gmail.com?subject=Study%20Help&body=হ্যালো,%20আমি%20একটা%20বার্তা%20পাঠাচ্ছি।" class="icon-btn" style="text-decoration:none; display:grid; place-items:center;">
+    ✉️
+  </a>
+  <button class="icon-btn" onclick="location.hash='#settings'">⋮</button>
+  </div>
+</header>
+
+<div id="menuOverlay"></div>
+<aside id="sideMenu">
+  <a href="#home">🏠 Home</a>
+  <a href="#community">👥 Community</a>
+  <a href="#chat">💬 Chat</a>
+  <a href="#notifications">🔔 Notifications</a>
+  <a href="#classPage">🎓 Class</a>
+  <a href="#settings">⚙️ Settings</a>
+  <a href="#info">ℹ️ Info</a>
+  <a href="#profile">👤 Profile</a>
+</aside>
+
+<main>
+  <!-- ✅ Home -->
+  <section class="view" id="home"></section>
+
+  <!-- 🎓 Classes Page -->
+  <section class="view" id="classPage">
+    <div class="grid">
+      <a href="#class9" class="card"><div class="thumb" style="background: hotpink;">Class 9</div><div class="card-body"><div class="title">Class 9</div><div class="hint">Tap to continue</div></div></a>
+      <a href="#class10" class="card"><div class="thumb" style="background: purple;">Class 10</div><div class="card-body"><div class="title">Class 10</div><div class="hint">Tap to continue</div></div></a>
+      <a href="#Semesters1/2" class="card"><div class="thumb" style="background: green;">Class 11</div><div class="card-body"><div class="title">Class 11</div><div class="hint">Tap to continue</div></div></a>
+      <a href="#Semesters3/4" class="card"><div class="thumb" style="background: rosybrown;">Class 12</div><div class="card-body"><div class="title">Class 12</div><div class="hint">Tap to continue</div></div></a>
+    </div>
+  </section>
+
+  <!-- 🎓 Class 9 -->
+  <section class="view" id="class9">
+    <div class="grid">
+      <a href="#PaidClassclass9" class="card" style="grid-column:1/-1">
+        <div class="thumb" style="background:#1b2b66">Paid Class</div>
+        <div class="card-body"><div class="title">Paid Class</div><div class="hint">Tap to continue</div></div>
+      </a>
+    </div>
+    <br>
+    <div class="grid">
+      <a href="#subjectsFree9" class="card" style="grid-column:1/-1">
+        <div class="thumb" style="background:#1b2b66">Free Class</div>
+        <div class="card-body"><div class="title">Free Class</div><div class="hint">Tap to continue</div></div>
+      </a>
+    </div>
+  </section>
+
+  <!-- 📚 Class 9 Free Subjects -->
+  <section class="view" id="subjectsFree9">
+    <div class="grid">
+      <a href="#sub-bangla9free" class="card subject-card"><div class="card-body"><div class="text"><div class="title">বাংলা</div><div class="hint">Unlock to view chapters</div></div><span class="mail-btn">💬</span></div></a>
+      <a href="#sub-english9free" class="card subject-card"><div class="card-body"><div class="text"><div class="title">English</div><div class="hint">Unlock to view chapters</div></div><span class="mail-btn">💬</span></div></a>
+      <a href="#sub-history9free" class="card subject-card"><div class="card-body"><div class="text"><div class="title">ইতিহাস</div><div class="hint">Unlock to view chapters</div></div><span class="mail-btn">💬</span></div></a>
+      <a href="#sub-geo9free" class="card subject-card"><div class="card-body"><div class="text"><div class="title">ভূগোল</div><div class="hint">Unlock to view chapters</div></div><span class="mail-btn">💬</span></div></a>
+      <a href="#sub-math9free" class="card subject-card"><div class="card-body"><div class="text"><div class="title">গণিত</div><div class="hint">Unlock to view chapters</div></div><span class="mail-btn">💬</span></div></a>
+      <a href="#sub-life9free" class="card subject-card"><div class="card-body"><div class="text"><div class="title">জীবন বিজ্ঞান</div><div class="hint">Unlock to view chapters</div></div><span class="mail-btn">💬</span></div></a>
+      <a href="#sub-phy9free" class="card subject-card"><div class="card-body"><div class="text"><div class="title">ভৌত বিজ্ঞান</div><div class="hint">Unlock to view chapters</div></div><span class="mail-btn">💬</span></div></a>
+    </div>
+  </section>
+
+  <!-- বাংলা -->
+  <section class="view" id="sub-bangla9free">
+    <div class="grid">
+      <div class="card chapter-card"><div class="card-body"><div class="text"><div class="title">📖 বাংলা অধ্যায় ১</div><div class="hint">Tap to open</div></div><a class="chapter-btn" href="mailto:cgarai581@gmail.com?subject=বাংলা অধ্যায় ১">💬</a></div></div>
+      <div class="card chapter-card"><div class="card-body"><div class="text"><div class="title">📖 বাংলা অধ্যায় ২</div><div class="hint">Tap to open</div></div><a class="chapter-btn" href="mailto:cgarai581@gmail.com?subject=বাংলা অধ্যায় ২">💬</a></div></div>
+    </div>
+  </section>
+
+  <!-- English -->
+  <section class="view" id="sub-english9free">
+    <div class="grid">
+      <div class="card chapter-card"><div class="card-body"><div class="text"><div class="title">📖 Chapter 1</div><div class="hint">Tap to open</div></div><a class="chapter-btn" href="mailto:cgarai581@gmail.com?subject=English Chapter 1">💬</a></div></div>
+    </div>
+  </section>
+
+  <!-- ইতিহাস -->
+  <section class="view" id="sub-history9free">
+    <div class="grid">
+      <div class="card chapter-card"><div class="card-body"><div class="text"><div class="title">📖 ইতিহাস অধ্যায় ১</div><div class="hint">Tap to open</div></div><a class="chapter-btn" href="mailto:cgarai581@gmail.com?subject=ইতিহাস অধ্যায় ১">💬</a></div></div>
+    </div>
+  </section>
+
+  <!-- ভূগোল -->
+  <section class="view" id="sub-geo9free">
+    <div class="grid">
+      <div class="card chapter-card"><div class="card-body"><div class="text"><div class="title">📖 ভূগোল অধ্যায় ১</div><div class="hint">Tap to open</div></div><a class="chapter-btn" href="mailto:cgarai581@gmail.com?subject=ভূগোল অধ্যায় ১">💬</a></div></div>
+    </div>
+  </section>
+
+  <!-- গণিত -->
+  <section class="view" id="sub-math9free">
+    <div class="grid">
+      <div class="card chapter-card"><div class="card-body"><div class="text"><div class="title">📖 Algebra</div><div class="hint">Tap to open</div></div><a class="chapter-btn" href="mailto:cgarai581@gmail.com?subject=Math Algebra">💬</a></div></div>
+    </div>
+  </section>
+
+  <!-- জীবন বিজ্ঞান -->
+  <section class="view" id="sub-life9free">
+    <div class="grid">
+      <div class="card chapter-card"><div class="card-body"><div class="text"><div class="title">📖 জীবন বিজ্ঞান অধ্যায় ১</div><div class="hint">Tap to open</div></div><a class="chapter-btn" href="mailto:cgarai581@gmail.com?subject=জীবন বিজ্ঞান অধ্যায় ১">💬</a></div></div>
+    </div>
+  </section>
+
+  <!-- ভৌত বিজ্ঞান -->
+  <section class="view" id="sub-phy9free">
+    <div class="grid">
+      <div class="card chapter-card"><div class="card-body"><div class="text"><div class="title">📖 ভৌত বিজ্ঞান অধ্যায় ১</div><div class="hint">Tap to open</div></div><a class="chapter-btn" href="mailto:cgarai581@gmail.com?subject=ভৌত বিজ্ঞান অধ্যায় ১">💬</a></div></div>
+    </div>
+  </section>
+
+  <!-- Paid Class 9 -->
+  <section class="view" id="PaidClassclass9">
+    <div class="grid">
+      <a href="#subjectspaid9" class="card">
+        <div class="thumb" style="background:#2a1b66">Bongmistry</div>
+        <div class="card-body"><div class="title">Bongmistry</div><div class="hint">Open Subjects</div></div>
+      </a>
+    </div>
+  </section>
+
+  <section class="view" id="subjectspaid9">
+    <div class="grid">
+      <a href="#sub-math9paid" class="card subject-card"><div class="card-body"><div class="text"><div class="title">গণিত</div><div class="hint">Unlock to view chapters</div></div><span class="mail-btn">💬</span></div></a>
+      <a href="#sub-life9paid" class="card subject-card"><div class="card-body"><div class="text"><div class="title">জীবন বিজ্ঞান</div><div class="hint">Unlock to view chapters</div></div><span class="mail-btn">💬</span></div></a>
+      <a href="#sub-phy9paid" class="card subject-card"><div class="card-body"><div class="text"><div class="title">ভৌত বিজ্ঞান</div><div class="hint">Unlock to view chapters</div></div><span class="mail-btn">💬</span></div></a>
+    </div>
+  </section>
+
+  <section class="view" id="sub-math9paid">
+    <div class="grid"><div class="card chapter-card"><div class="card-body"><div class="text"><div class="title">📖 অধ্যায় ১</div><div class="hint">Tap to open</div></div><a class="chapter-btn" href="mailto:cgarai581@gmail.com?subject=গণিত অধ্যায় ১">💬</a></div></div></div>
+  </section>
+
+  <section class="view" id="sub-life9paid">
+    <div class="grid"><div class="card chapter-card"><div class="card-body"><div class="text"><div class="title">📖 অধ্যায় ১ : কোষতত্ত্ব</div><div class="hint">Tap to open</div></div><a class="chapter-btn" href="mailto:cgarai581@gmail.com?subject=জীবন বিজ্ঞান অধ্যায় ১">💬</a></div></div></div>
+  </section>
+
+  <section class="view" id="sub-phy9paid">
+    <div class="grid"><div class="card chapter-card"><div class="card-body"><div class="text"><div class="title">📖 অধ্যায় ১</div><div class="hint">Tap to open</div></div><a class="chapter-btn" href="mailto:cgarai581@gmail.com?subject=ভৌত বিজ্ঞান অধ্যায় ১">💬</a></div></div></div>
+  </section>
+
+  <!-- 🎓 Class 10 -->
+  <section class="view" id="class10">
+    <div class="grid">
+      <a href="#PaidClassclass10" class="card" style="grid-column:1/-1">
+        <div class="thumb" style="background:#1b2b66">Paid Class</div>
+        <div class="card-body"><div class="title">Paid Class</div><div class="hint">Tap to continue</div></div>
+      </a>
+    </div>
+    <br>
+    <div class="grid">
+      <a href="#subjectsFree10" class="card" style="grid-column:1/-1">
+        <div class="thumb" style="background:#1b2b66">Free Class</div>
+        <div class="card-body"><div class="title">Free Class</div><div class="hint">Tap to continue</div></div>
+      </a>
+    </div>
+  </section>
+
+  <!-- 📚 Class 10 Free Subjects -->
+  <section class="view" id="subjectsFree10">
+    <div class="grid">
+      <a href="#sub-bangla10free" class="card subject-card"><div class="card-body"><div class="text"><div class="title">বাংলা</div><div class="hint">Unlock to view chapters</div></div><span class="mail-btn">💬</span></div></a>
+      <a href="#sub-english10free" class="card subject-card"><div class="card-body"><div class="text"><div class="title">English</div><div class="hint">Unlock to view chapters</div></div><span class="mail-btn">💬</span></div></a>
+      <a href="#sub-history10free" class="card subject-card"><div class="card-body"><div class="text"><div class="title">ইতিহাস</div><div class="hint">Unlock to view chapters</div></div><span class="mail-btn">💬</span></div></a>
+      <a href="#sub-geo10free" class="card subject-card"><div class="card-body"><div class="text"><div class="title">ভূগোল</div><div class="hint">Unlock to view chapters</div></div><span class="mail-btn">💬</span></div></a>
+      <a href="#sub-math10free" class="card subject-card"><div class="card-body"><div class="text"><div class="title">গণিত</div><div class="hint">Unlock to view chapters</div></div><span class="mail-btn">💬</span></div></a>
+      <a href="#sub-life10free" class="card subject-card"><div class="card-body"><div class="text"><div class="title">জীবন বিজ্ঞান</div><div class="hint">Unlock to view chapters</div></div><span class="mail-btn">💬</span></div></a>
+      <a href="#sub-phy10free" class="card subject-card"><div class="card-body"><div class="text"><div class="title">ভৌত বিজ্ঞান</div><div class="hint">Unlock to view chapters</div></div><span class="mail-btn">💬</span></div></a>
+    </div>
+  </section>
+
+  <section class="view" id="sub-bangla10free"><div class="grid"><div class="card chapter-card"><div class="card-body"><div class="text"><div class="title">📖 অধ্যায় ১</div><div class="hint">Tap to open</div></div><a class="chapter-btn" href="mailto:cgarai581@gmail.com?subject=বাংলা অধ্যায় ১">💬</a></div></div></div></section>
+  <section class="view" id="sub-english10free"><div class="grid"><div class="card chapter-card"><div class="card-body"><div class="text"><div class="title">📖 অধ্যায় ১</div><div class="hint">Tap to open</div></div><a class="chapter-btn" href="mailto:cgarai581@gmail.com?subject=English Chapter 1">💬</a></div></div></div></section>
+  <section class="view" id="sub-history10free"><div class="grid"><div class="card chapter-card"><div class="card-body"><div class="text"><div class="title">📖 অধ্যায় ১</div><div class="hint">Tap to open</div></div><a class="chapter-btn" href="mailto:cgarai581@gmail.com?subject=ইতিহাস অধ্যায় ১">💬</a></div></div></div></section>
+  <section class="view" id="sub-geo10free"><div class="grid"><div class="card chapter-card"><div class="card-body"><div class="text"><div class="title">📖 অধ্যায় ১</div><div class="hint">Tap to open</div></div><a class="chapter-btn" href="mailto:cgarai581@gmail.com?subject=ভূগোল অধ্যায় ১">💬</a></div></div></div></section>
+  <section class="view" id="sub-math10free"><div class="grid"><div class="card chapter-card"><div class="card-body"><div class="text"><div class="title">📖 অধ্যায় ১</div><div class="hint">Tap to open</div></div><a class="chapter-btn" href="mailto:cgarai581@gmail.com?subject=গণিত অধ্যায় ১">💬</a></div></div></div></section>
+<!-- জীবন বিজ্ঞান -->
+  <section class="view" id="sub-life10free">
+    <div class="grid">
+      <div class="card chapter-card">
+        <div class="card-body">
+          <div class="text">
+            <div class="title">📖 অধ্যায় ১ : কোষতত্ত্ব</div>
+            <div class="hint">Tap to open</div>
+          </div>
+          <a class="chapter-btn" href="mailto:cgarai581@gmail.com?subject=জীবন বিজ্ঞান অধ্যায় ১">💬</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ভৌত বিজ্ঞান -->
+  <section class="view" id="sub-phy10free">
+    <div class="grid">
+      <div class="card chapter-card">
+        <div class="card-body">
+          <div class="text">
+            <div class="title">📖 অধ্যায় ১ : ভৌত বিজ্ঞান</div>
+            <div class="hint">Tap to open</div>
+          </div>
+          <a class="chapter-btn" href="mailto:cgarai581@gmail.com?subject=ভৌত বিজ্ঞান অধ্যায় ১">💬</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🎓 Class 10 Paid -->
+  <section class="view" id="PaidClassclass10">
+    <div class="grid">
+      <a href="#subjectspaid10" class="card">
+        <div class="thumb" style="background:#2a1b66">Bongmistry</div>
+        <div class="card-body">
+          <div class="title">Bongmistry</div>
+          <div class="hint">Open Subjects</div>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- 📚 Class 10 Paid Subjects -->
+  <section class="view" id="subjectspaid10">
+    <div class="grid">
+      <a href="#sub-math10paid" class="card subject-card">
+        <div class="card-body">
+          <div class="text">
+            <div class="title">গণিত</div>
+            <div class="hint">Unlock to view chapters</div>
+          </div>
+          <span class="mail-btn">💬</span>
+        </div>
+      </a>
+
+      <a href="#sub-life10paid" class="card subject-card">
+        <div class="card-body">
+          <div class="text">
+            <div class="title">জীবন বিজ্ঞান</div>
+            <div class="hint">Unlock to view chapters</div>
+          </div>
+          <span class="mail-btn">💬</span>
+        </div>
+      </a>
+
+      <a href="#sub-phy10paid" class="card subject-card">
+        <div class="card-body">
+          <div class="text">
+            <div class="title">ভৌত বিজ্ঞান</div>
+            <div class="hint">Unlock to view chapters</div>
+          </div>
+          <span class="mail-btn">💬</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- গণিত (Paid) -->
+  <section class="view" id="sub-math10paid">
+    <div class="grid">
+      <div class="card chapter-card">
+        <div class="card-body">
+          <div class="text">
+            <div class="title">📖 অধ্যায় ১</div>
+            <div class="hint">Tap to open</div>
+          </div>
+          <a class="chapter-btn" href="mailto:cgarai581@gmail.com?subject=গণিত অধ্যায় ১">💬</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- জীবন বিজ্ঞান (Paid) -->
+  <section class="view" id="sub-life10paid">
+    <div class="grid">
+      <div class="card chapter-card">
+        <div class="card-body">
+          <div class="text">
+            <div class="title">📖 অধ্যায় ১ : কোষতত্ত্ব</div>
+            <div class="hint">Tap to open</div>
+          </div>
+          <a class="chapter-btn" href="mailto:cgarai581@gmail.com?subject=জীবন বিজ্ঞান অধ্যায় ১">💬</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ভৌত বিজ্ঞান (Paid) -->
+  <section class="view" id="sub-phy10paid">
+    <div class="grid">
+      <div class="card chapter-card">
+        <div class="card-body">
+          <div class="text">
+            <div class="title">📖 অধ্যায় ১</div>
+            <div class="hint">Tap to open</div>
+          </div>
+          <a class="chapter-btn" href="mailto:cgarai581@gmail.com?subject=ভৌত বিজ্ঞান অধ্যায় ১">💬</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+<section class="view" id="Semesters3/4">
+  <div class="grid">
+    <a href="#sem" class="card" style="grid-column:1 / -1">
+      <div class="thumb" style="height:200px;display:flex;align-items:center;justify-content:center;background:#333366">
+        <div style="font-size:32px;font-weight:700;color:#fff">Sem-3</div>
+      </div>
+      <div class="card-body">
+        <div class="title">Semester 3</div>
+        <div class="hint">Tap to view subjects</div>
+      </div>
+    </a>
+
+    <a href="#sem4" class="card" style="grid-column:1 / -1">
+      <div class="thumb" style="height:200px;display:flex;align-items:center;justify-content:center;background:#1b2b66">
+        <div style="font-size:32px;font-weight:700;color:#fff">Sem-4</div>
+      </div>
+      <div class="card-body">
+        <div class="title">Semester 4</div>
+        <div class="hint">Tap to view subjects</div>
+      </div>
+    </a>
+  </div>
+</section>
+
+  <!-- Sem-4 -->
+<!-- Sem-4 (এক কলামে, অ্যানিমেশন + রঙ) -->
+<!-- ===== Semester 3 Page ===== -->
+<section class="view" id="sem4">
+  <div class="tabs">
+    <button class="tab active" onclick="showSubjects('science', this)">Science</button>
+    <button class="tab" onclick="showSubjects('arts', this)">Arts</button>
+    <button class="tab" onclick="showSubjects('commerce', this)">Commerce</button>
+  </div>
+
+  <!-- Science Subjects -->
+  <div class="subjects-grid" id="science-subjects">
+    <!-- Bengali -->
+    <div style="display:flex; align-items:center; gap:8px;">
+      <a href="#Bengalisem4" style="flex:1; text-decoration:none; color:inherit;">
+        <div class="card subject-card">Bengali <br><small>Unlock to view chapters</small></div>
+      </a>
+      <a href="mailto:cgarai581@gmail.com?subject=Bengali%20Help&body=I%20need%20help%20with%20Bengali" class="chat-btn">💬</a>
+    </div>
+    <br>
+    <!-- English -->
+    <div style="display:flex; align-items:center; gap:8px;">
+      <a href="#Englishsem4" style="flex:1; text-decoration:none; color:inherit;">
+        <div class="card subject-card">English <br><small>Unlock to view chapters</small></div>
+      </a>
+      <a href="mailto:cgarai581@gmail.com?subject=English%20Help&body=I%20need%20help%20with%20English" class="chat-btn">💬</a>
+    </div>
+    <br>
+    <!-- Chemistry -->
+    <div style="display:flex; align-items:center; gap:8px;">
+      <a href="#" style="flex:1; text-decoration:none; color:inherit;">
+        <div class="card subject-card">Chemistry <br><small>Unlock to view chapters</small></div>
+      </a>
+      <a href="mailto:cgarai581@gmail.com?subject=Chemistry%20Help&body=I%20need%20help%20with%20Chemistry" class="chat-btn">💬</a>
+    </div>
+    <br>
+    <!-- Mathematics -->
+    <div style="display:flex; align-items:center; gap:8px;">
+      <a href="#math" style="flex:1; text-decoration:none; color:inherit;">
+        <div class="card subject-card">Mathematics <br><small>Unlock to view chapters</small></div>
+      </a>
+      <a href="mailto:cgarai581@gmail.com?subject=Mathematics%20Help&body=I%20need%20help%20with%20Mathematics" class="chat-btn">💬</a>
+    </div>
+    <br>
+    <!-- Biology -->
+    <div style="display:flex; align-items:center; gap:8px;">
+      <a href="#" style="flex:1; text-decoration:none; color:inherit;">
+        <div class="card subject-card">Biology <br><small>Unlock to view chapters</small></div>
+      </a>
+      <a href="mailto:cgarai581@gmail.com?subject=Biology%20Help&body=I%20need%20help%20with%20Biology" class="chat-btn">💬</a>
+    </div>
+  </div>
+
+  <!-- Arts Subjects -->
+  <div class="subjects-grid" id="arts-subjects" style="display:none;">
+    <!-- Bengali -->
+    <div style="display:flex; align-items:center; gap:8px;">
+      <a href="#Bengalisem4" style="flex:1; text-decoration:none; color:inherit;">
+        <div class="card subject-card">Bengali <br><small>Unlock to view chapters</small></div>
+      </a>
+      <a href="mailto:cgarai581@gmail.com?subject=Bengali%20Help&body=I%20need%20help%20with%20Bengali" class="chat-btn">💬</a>
+    </div>
+    <br>
+    <!-- English -->
+    <div style="display:flex; align-items:center; gap:8px;">
+      <a href="#Englishsem4" style="flex:1; text-decoration:none; color:inherit;">
+        <div class="card subject-card">English <br><small>Unlock to view chapters</small></div>
+      </a>
+      <a href="mailto:cgarai581@gmail.com?subject=English%20Help&body=I%20need%20help%20with%20English" class="chat-btn">💬</a>
+    </div>
+    <br>
+    <!-- History -->
+    <div style="display:flex; align-items:center; gap:8px;">
+      <a href="#" style="flex:1; text-decoration:none; color:inherit;">
+        <div class="card subject-card">History <br><small>Unlock to view chapters</small></div>
+      </a>
+      <a href="mailto:cgarai581@gmail.com?subject=History%20Help&body=I%20need%20help%20with%20History" class="chat-btn">💬</a>
+    </div>
+    <br>
+    <!-- Geography -->
+    <div style="display:flex; align-items:center; gap:8px;">
+      <a href="#" style="flex:1; text-decoration:none; color:inherit;">
+        <div class="card subject-card">Geography <br><small>Unlock to view chapters</small></div>
+      </a>
+      <a href="mailto:cgarai581@gmail.com?subject=Geography%20Help&body=I%20need%20help%20with%20Geography" class="chat-btn">💬</a>
+    </div>
+    <br>
+    <!-- Political Science -->
+    <div style="display:flex; align-items:center; gap:8px;">
+      <a href="#" style="flex:1; text-decoration:none; color:inherit;">
+        <div class="card subject-card">Political Science <br><small>Unlock to view chapters</small></div>
+      </a>
+      <a href="mailto:cgarai581@gmail.com?subject=Political%20Science%20Help&body=I%20need%20help%20with%20Political%20Science" class="chat-btn">💬</a>
+    </div>
+    <br>
+    <!-- Economics -->
+    <div style="display:flex; align-items:center; gap:8px;">
+      <a href="#" style="flex:1; text-decoration:none; color:inherit;">
+        <div class="card subject-card">Economics <br><small>Unlock to view chapters</small></div>
+      </a>
+      <a href="mailto:cgarai581@gmail.com?subject=Economics%20Help&body=I%20need%20help%20with%20Economics" class="chat-btn">💬</a>
+    </div>
+  </div>
+
+  <!-- Commerce Subjects -->
+  <div class="subjects-grid" id="commerce-subjects" style="display:none;">
+    <!-- Bengali -->
+    <div style="display:flex; align-items:center; gap:8px;">
+      <a href="#Bengalisem4" style="flex:1; text-decoration:none; color:inherit;">
+        <div class="card subject-card">Bengali <br><small>Unlock to view chapters</small></div>
+      </a>
+      <a href="mailto:cgarai581@gmail.com?subject=Bengali%20Help&body=I%20need%20help%20with%20Bengali" class="chat-btn">💬</a>
+    </div>
+    <br />
+    <!-- English -->
+    <div style="display:flex; align-items:center; gap:8px;">
+      <a href="#Englishsem4" style="flex:1; text-decoration:none; color:inherit;">
+        <div class="card subject-card">English <br><small>Unlock to view chapters</small></div>
+      </a>
+      <a href="mailto:cgarai581@gmail.com?subject=English%20Help&body=I%20need%20help%20with%20English" class="chat-btn">💬</a>
+    </div>
+    <br>
+    <!-- Accountancy -->
+    <div style="display:flex; align-items:center; gap:8px;">
+      <a href="#" style="flex:1; text-decoration:none; color:inherit;">
+        <div class="card subject-card">Accountancy <br><small>Unlock to view chapters</small></div>
+      </a>
+      <a href="mailto:cgarai581@gmail.com?subject=Accountancy%20Help&body=I%20need%20help%20with%20Accountancy" class="chat-btn">💬</a>
+    </div>
+    <br>
+    <!-- Business Studies -->
+    <div style="display:flex; align-items:center; gap:8px;">
+      <a href="#" style="flex:1; text-decoration:none; color:inherit;">
+        <div class="card subject-card">Business Studies <br><small>Unlock to view chapters</small></div>
+      </a>
+      <a href="mailto:cgarai581@gmail.com?subject=Business%20Studies%20Help&body=I%20need%20help%20with%20Business%20Studies" class="chat-btn">💬</a>
+    </div>
+    <br>
+    <!-- Economics -->
+    <div style="display:flex; align-items:center; gap:8px;">
+      <a href="#" style="flex:1; text-decoration:none; color:inherit;">
+        <div class="card subject-card">Economics <br><small>Unlock to view chapters</small></div>
+      </a>
+      <a href="mailto:cgarai581@gmail.com?subject=Economics%20Help&body=I%20need%20help%20with%20Economics" class="chat-btn">💬</a>
+    </div>
+    <br>
+    <!-- Mathematics -->
+    <div style="display:flex; align-items:center; gap:8px;">
+      <a href="#" style="flex:1; text-decoration:none; color:inherit;">
+        <div class="card subject-card">Mathematics <br><small>Unlock to view chapters</small></div>
+      </a>
+      <a href="mailto:cgarai581@gmail.com?subject=Mathematics%20Help&body=I%20need%20help%20with%20Mathematics" class="chat-btn">💬</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Bengali Page ===== -->
+<section class="view" id="Bengalisem4">
+  <div class="subjects-grid">
+    <!--Chapter 1 -->
+    <a href="#BengaliCp1" class="unit-link" style="text-decoration:none; color:inherit;">
+      <div class="card subject-card">Chapter<br><small>Chapter 1</small></div>
+    </a>
+  </div>
+</section>
+
+<section class="view" id="BengaliCp1">
+  <!-- Tabs -->
+  <div class="tabs">
+    <button class="tab active" onclick="filterDetail('all',this)">All</button>
+    <button class="tab" onclick="filterDetail('video',this)">Videos</button>
+    <button class="tab" onclick="filterDetail('note',this)">Notes</button>
+    <button class="tab" onclick="filterDetail('test',this)">Test</button>
+    <button class="tab" onclick="filterDetail('saved',this)">Saved</button>
+  </div>
+
+  <!-- Items -->
+  <div class="grid" id="detailList">
+
+    <!-- Video 1 -->
+    <a href="https://www.youtube.com/watch?v=xxxxxx" target="_blank" class="card detail-card" data-type="video" id="vid1">
+      <div class="thumb large-card">
+        <div class="thumb-text">Video 1</div>
+      </div>
+      <div class="card-body">
+        <div class="title">Electrostatics Lecture 1</div>
+        <div class="hint">Physics Video</div>
+        <button type="button" class="save-btn" onclick="event.preventDefault();toggleSave('vid1')">Save</button>
+      </div>
+    </a>
+
+    <!-- Video 2 -->
+    <a href="https://www.youtube.com/watch?v=yyyyyy" target="_blank" class="card detail-card" data-type="video" id="vid2">
+      <div class="thumb large-card" style="background:#0d4b2a;">
+        <div class="thumb-text">Video 2</div>
+      </div>
+      <div class="card-body">
+        <div class="title">Electrostatics Lecture 2</div>
+        <div class="hint">Physics Video</div>
+        <button type="button" class="save-btn" onclick="event.preventDefault();toggleSave('vid2')">Save</button>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+<section class="view" id="Semesters1/2">
+  <div class="grid">
+    <a href="#sem1" class="card" style="grid-column:1 / -1">
+      <div class="thumb" style="height:200px;display:flex;align-items:center;justify-content:center;background: skyblue">
+        <div style="font-size:32px;font-weight:700;color:#fff">Sem-1</div>
+      </div>
+      <div class="card-body">
+        <div class="title">Semester 1</div>
+        <div class="hint">Tap to view subjects</div>
+      </div>
+    </a>
+
+    <a href="#sem2" class="card" style="grid-column:1 / -1">
+      <div class="thumb" style="height:200px;display:flex;align-items:center;justify-content:center;background: sandybrown">
+        <div style="font-size:32px;font-weight:700;color:#fff">Sem-2</div>
+      </div>
+      <div class="card-body">
+        <div class="title">Semester 2</div>
+        <div class="hint">Tap to view subjects</div>
+      </div>
+    </a>
+  </div>
+</section>
+
+  <!-- Project -->
+  <script src="main.js"></script>
+</body>
+</html>
